@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Password Hashing</title>
+</head>
+<body>
+<div class ="container">
+<form action="#" method = "post" name="hashing" id="hash" class=password>
+<h2>Password Hashing</h2>
+<label>Enter the Password text :</label>
+<input type ="text" name="pwtext" id="pwtext" placeholder="PasswordText"/><br>
+<div id ="types">
+<input type="radio" name="hastype" id="hastype1" value="MD5">
+<label for ="md5" >MD5</label><br>
+<input type="radio" name="hastype" id="hastype2" value="SCRYPT">
+<label for ="scrypt" >SCRYPT</label><br>
+<input type="radio" name="hastype" id="hastype3" value="BCRYPT">
+<label for ="bcrypt" >BCRYPT</label><br>
+<br>
+</div>
+<input type = "submit" value="Get Hashing" onClick = "submit_hashing(this.form)">
+</form>
+</div>
+</body>
+</html>
